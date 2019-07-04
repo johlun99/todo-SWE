@@ -1,0 +1,53 @@
+<div class="modal fade" id="sign-out-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Utloggning</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vill du logga ut?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
+                <button type="button" id="sign-out-button" class="btn btn-primary">Fortsätt</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+        <button class="btn btn-dark mt-5 mr-5" id="sign-out" data-toggle="modal" data-target="#sign-out-modal">Logga ut</button>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-center border border-dark rounded p-4">
+            <h1>Att göra</h1>
+            <table class="table table-striped mt-3">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titel</th>
+                    <th scope="col">Beskrivning</th>
+                    <th scope="col">Färdig</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="todo-table">
+                </tbody>
+            </table>
+            <form id="todo-add-form" class="border-top">
+                <label for="title">Titel:</label>
+                <input id="title" type="text" class="form-control">
+                <label for="description">Beskrivning:</label>
+                <input id="description" type="text" class="form-control">
+                <input type="submit" class="btn- btn-lg btn-primary mt-2" value="Lägg till">
+            </form>
+        </div>
+    </div>
+</div>

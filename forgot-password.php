@@ -1,0 +1,2 @@
+<?php
+echo "Kommer snart";
